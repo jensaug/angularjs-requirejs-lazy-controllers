@@ -1,3 +1,9 @@
+Note - this is just a fork of matys84pl, modified to allow lazy load any number of named Controllers when a view is needed 
+and thus use any number of (possibly nested) Controllers (using ng-controller attribute) in html views.
+
+This enables me to use server-side authorization (in this case a WAR), which will give anyone not having a certain "role" a HTTP 403 if trying to access /admin path, 
+so I can physically hide controllers, directives and html for (authenticated but) unauthorized users. Sweeet.
+
 angularjs-requirejs-lazy-controllers
 ====================================
 
